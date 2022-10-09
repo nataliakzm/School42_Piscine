@@ -58,3 +58,10 @@ Completed During The 2st Piscine (July - August 2022) at 42 Firenze Luiss.
 - [ex01: ft_putstr](https://github.com/nataliakzm/School42_Piscine/blob/main/C04/ex01/ft_putstr.c) - Print a String
 - [ex02: ft_putnbr](https://github.com/nataliakzm/School42_Piscine/blob/main/C04/ex02/ft_putnbr.c) - Print Any Number Within The Max / Min Int
 - [ex03: ft_atoi](https://github.com/nataliakzm/School42_Piscine/blob/main/C04/ex03/ft_atoi.c) - Convert the Portion of a String to its Int Representation
+
+## [C06](https://github.com/nataliakzm/School42_Piscine/tree/main/C06) - Understanding Argc and Argv
+
+- [ex00: ft_print_program_name](https://github.com/nataliakzm/School42_Piscine/blob/main/C06/ex00/ft_print_program_name.c) - Print the Name of a Program
+- [ex01: ft_print_params](https://github.com/nataliakzm/School42_Piscine/blob/main/C06/ex01/ft_print_params.c) - Print Parameters of a Program
+- [ex02: ft_rev_params](https://github.com/nataliakzm/School42_Piscine/blob/main/C06/ex02/ft_rev_params.c) - Print Parameters of a Program in Reverse
+- [ex03: ft_sort_params](https://github.com/nataliakzm/School42_Piscine/blob/main/C06/ex03/ft_sort_params.c) - Sort Parameters of a Program 
