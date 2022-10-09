@@ -76,8 +76,8 @@ Completed During The 2st Piscine (July - August 2022) at 42 Firenze Luiss.
 
 <div align="center">
 
-# 42 Shell Project
-
+# 42 Shell Projects
+![Build Status](https://camo.githubusercontent.com/d76fd7565bd13dcb9562621ba516f3d08387b3bcbad9c605ba62e3de7de03da2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5368656c6c2d426173682d626c7565)
 </div>
 
 - [Shell00](https://github.com/nataliakzm/School42_Piscine/tree/main/Shell_00) 
