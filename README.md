@@ -42,3 +42,19 @@ Completed During The 2st Piscine (July - August 2022) at 42 Firenze Luiss.
 - [ex08: ft_strlowcase](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex08/ft_strlowcase.c) - Make a String Lowercase
 - [ex09: ft_strcapitalize](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex09/ft_strcapitalize.c) - Capitalize Only the First Letter
 - [ex10: ft_strlcpy](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex10/ft_strlcpy.c) - Reproduce `strlcpy` Function
+
+## [C03](https://github.com/nataliakzm/School42_Piscine/tree/main/C03) - String Functions, Manipulation and Concatanation
+
+- [ex00: ft_strcmp](https://github.com/nataliakzm/School42_Piscine/blob/main/C03/ex00/ft_strcmp.c) - Compare Two Strings, Returning a Value
+- [ex01: ft_strncmp](https://github.com/nataliakzm/School42_Piscine/blob/main/C03/ex01/ft_strncmp.c) - Compare Two Strings, Returning a Value, Using Unsigned Ints
+- [ex02: ft_strcat](https://github.com/nataliakzm/School42_Piscine/blob/main/C03/ex02/ft_strcat.c) - Concatanate Two Strings
+- [ex03: ft_strncat](https://github.com/nataliakzm/School42_Piscine/blob/main/C03/ex03/ft_strncat.c) - Concatanate Two Strings, Using Unsigned Ints
+- [ex04: ft_strstr](https://github.com/nataliakzm/School42_Piscine/blob/main/C03/ex04/ft_strstr.c) - Reproduce `strstr` Function
+- [ex05: ft_strlcat](https://github.com/nataliakzm/School42_Piscine/blob/main/C03/ex05/ft_strlcat.c) - Reproduce `strlcat` Function
+
+## [C04](https://github.com/nataliakzm/School42_Piscine/tree/main/C04) - Analysing String Qualities and Manipulating Ints
+
+- [ex00: ft_strlen](https://github.com/nataliakzm/School42_Piscine/blob/main/C04/ex00/ft_strlen.c) - Get the Length of a String
+- [ex01: ft_putstr](https://github.com/nataliakzm/School42_Piscine/blob/main/C04/ex01/ft_putstr.c) - Print a String
+- [ex02: ft_putnbr](https://github.com/nataliakzm/School42_Piscine/blob/main/C04/ex02/ft_putnbr.c) - Print Any Number Within The Max / Min Int
+- [ex03: ft_atoi](https://github.com/nataliakzm/School42_Piscine/blob/main/C04/ex03/ft_atoi.c) - Convert the Portion of a String to its Int Representation
