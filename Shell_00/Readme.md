@@ -8,45 +8,46 @@ Create a file called z that returns _"Z"_, followed by a new line, whenever the 
 Z
 ?>
 ```
-**Solution:** `echo Z > z
-`
+**Solution:** `echo Z > z`
+
 ### Exercise 01: testShell00
 Figure out a way for the output to look like this (except for the `total 1` line):
 ```sh
-?>ls -l
+%>ls -l
 total 1
 -r--r-xr-x 1 XX XX 40 Jun 1 23:45 testShell00
-?>
+%>
 ```
 Once you’ve achieved the previous steps, execute the following command to create the file to be submitted: `tar -cf testShell00.tar testShell00`.
 
 **Solution:** 
 1)  Adding some weight to the file: **40 byte**
 ```sh
-?> printf "1234567890123456789012345678901234567890" >  ./testShell00
+%> printf "1234567890123456789012345678901234567890" >  ./testShell00
 ```
 2)  Specifing the date: **Jun 1 12:42**, where:
 - `-с` - don’t create any files;
 - `-t STAMP` - use `[[CC]YY]MMDDhhmm[.ss]` instead of current time
 ```sh
-?> touch -c -t 06012342 testShell00
+%> touch -c -t 06012342 testShell00
 ```
  3)  Setting permissions: `455` so that, one can read, can't write and can't execute
 ```sh
-?> cmod 455 ./testShell00
+%> cmod 455 ./testShell00
 ```
  4)  Check if everything is correct
 ```sh
-?> ls -l ./testSell00
+%> ls -l ./testSell00
 ```
  5)  Creating .tar file
 ```sh
-?> tar -cf testShell00.tar testShell00
+%> tar -cf testShell00.tar testShell00
 ```
+
 ### Exercise 02: Oh yeah, mooore...
 Create the following files and directories. Do what’s necessary so that when you use the `ls -l` command in your directory, the output will looks like this :
 ```sh
-?>ls -l
+%>ls -l
 total XX
 drwx--xr-x XX XX XX Jun 1 20:47 test0
 -rwx--xr-- XX XX  4 Jun 1 21:46 test1
@@ -55,7 +56,7 @@ dr-x---r-- XX XX XX Jun 1 22:45 test2
 -rw-r----x XX XX  2 Jun 1 23:43 test4
 -r-----r-- XX XX  1 Jun 1 24:44 test5
 lrwxrwxrwx XX XX  5 Jun 1 22:20 test6 ->  test0
-?>
+%>
 ```
 Once you’ve done that, run `tar -cf exo2.tar *` to create the file to be submitted.
 
@@ -63,38 +64,80 @@ Once you’ve done that, run `tar -cf exo2.tar *` to create the file to be submi
 1) Creating directories and files. Note that test6 is a symbolic link to test0, and test5 is a hard link to test3;
 
 ```sh
-?>mkdir test0 test2
+%>mkdir test0 test2
 touch test1 test3 test4
-?>
+%>
 ```
 2) Adjusting the weight of the files
 ```sh
-?>printf “1234” > ./test1 
+%>printf “1234” > ./test1 
 printf “1” > ./test3
 printf “12” > ./test4
-?>
+%>
 ```
 3) Setiing the date
 ```sh
-?>touch -t 06012047 test0
+%>touch -t 06012047 test0
 ```
 4) Setting the date for a symbolically linked file
 ```sh
-?>touch -ht 06012220 test6
+%>touch -ht 06012220 test6
 ```
 5) Regulating permissions:
 ```sh
-?>chmod 715 ./test0
+%>chmod 715 ./test0
 chmod 714 ./test1
 chmod 504 ./test2
 chmod 404 ./test3
 chmod 641 ./test4
+%>
 ```
  6)  Check if everything is correct
 ```sh
-?> ls -l
+%> ls -l
 ```
  5)  Creating .tar file
 ```sh
-?>run tar -cf exo2.tar *
+%>run tar -cf exo2.tar *
+```
+
+### Exercise 03: SSH me!
+Create your own SSH key
+
+**Solution:** `cat ~/.ssh/id_rsa.pub`
+
+### Exercise 04: midLS
+In a midLS file, place the command line that will list all files and directories in your current directory (except for hidden files or any file that starts by a dot - yes, that includes double-dots), separated by a comma, by order of modification date. Make sure the directory’s names are followed by a slash character.
+
+**Solution:** `ls -mtUp OR ls -tmp`
+
+### Exercise 05: GiT commit
+Create a shell script that displays the ids of the last 5 commits of your git repository.
+```sh
+%>bash git_commit.sh | cat -e
+baa23b54f0adb7bf42623d6d0a6ed4587e11412a$
+2f52d74b1387fa80eea844969e8dc5483b531ac1$
+905f53d98656771334f53f59bb984fc29774701f$
+5ddc8474f4f15b3fcb72d08fcb333e19c3a27078$
+e94d0b448c03ec633f16d84d63beaef9ae7e7be8$
+%>
+```
+**Solution:** Write down this to your script
+```sh
+#!/bin/sh
+git log --format=%H -5 
+```
+
+### Exercise 06: gitignore
+In this exercice, you will write a short shell script that lists all the existing files ignored by your GiT repository. Example:
+```sh
+%>bash git_ignore.sh | cat -e
+.DS_Store$
+mywork.c~$
+%>
+```
+**Solution:** Write down this to your script
+```sh
+#!/bin/sh
+git status --ignored -s | grep '!!' | cut -f 2 -d' '
 ```
