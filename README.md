@@ -28,3 +28,17 @@ Completed During The 2st Piscine (July - August 2022) at 42 Firenze Luiss.
 - [ex06: ft_strlen](https://github.com/nataliakzm/School42_Piscine/blob/main/C01/ex06/ft_strlen.c) - Get the Length of a String
 - [ex07: ft_rev_int_tab](https://github.com/nataliakzm/School42_Piscine/blob/main/C01/ex07/ft_rev_int_tab.c) - Reverse a Given Array
 - [ex08: ft_sort_int_tab](https://github.com/nataliakzm/School42_Piscine/blob/main/C01/ex08/ft_sort_int_tab.c) - Sort an Array
+
+## [C02](https://github.com/nataliakzm/School42_Piscine/tree/main/C02) - Introduction To Strings and Arrays
+
+- [ex00: ft_strcpy](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex00/ft_strcpy.c) - Copy a String
+- [ex01: ft_strncpy](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex01/ft_strncpy.c) - String Copy With an Unsigned Int
+- [ex02: ft_str_is_alpha](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex02/ft_str_is_alpha.c) - Conditional Statements using Arrays
+- [ex03: ft_str_is_numeric](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex03/ft_str_is_numeric.c) - Check a String is Numbers
+- [ex04: ft_str_is_lowercase](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex04/ft_str_is_lowercase.c) - Check a String is Lowercase
+- [ex05: ft_str_is_uppercase](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex05/ft_str_is_uppercase.c) - Check a String is Uppercase
+- [ex06: ft_str_is_printable](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex06/ft_str_is_printable.c) - Check a String is Printable
+- [ex07: ft_strupcase](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex07/ft_strupcase.c) - Make a String Uppercase
+- [ex08: ft_strlowcase](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex08/ft_strlowcase.c) - Make a String Lowercase
+- [ex09: ft_strcapitalize](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex09/ft_strcapitalize.c) - Capitalize Only the First Letter
+- [ex10: ft_strlcpy](https://github.com/nataliakzm/School42_Piscine/blob/main/C02/ex10/ft_strlcpy.c) - Reproduce `strlcpy` Function
