@@ -65,3 +65,11 @@ Completed During The 2st Piscine (July - August 2022) at 42 Firenze Luiss.
 - [ex01: ft_print_params](https://github.com/nataliakzm/School42_Piscine/blob/main/C06/ex01/ft_print_params.c) - Print Parameters of a Program
 - [ex02: ft_rev_params](https://github.com/nataliakzm/School42_Piscine/blob/main/C06/ex02/ft_rev_params.c) - Print Parameters of a Program in Reverse
 - [ex03: ft_sort_params](https://github.com/nataliakzm/School42_Piscine/blob/main/C06/ex03/ft_sort_params.c) - Sort Parameters of a Program 
+
+<div align="center">
+
+# 42 Rush Project
+
+</div>
+
+- [Rush 00](https://github.com/nataliakzm/School42_Piscine/tree/main/Rush_00/ex00) -  Rectange (X and Y)
