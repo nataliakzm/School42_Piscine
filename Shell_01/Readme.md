@@ -25,3 +25,31 @@ OR
 #!/bin/sh
 groups $FT_USER | tr ' ' ',' | tr -d '\n'
 ```
+
+### Exercise 02:  find_sh
+Write a command line that searches for all file names that end with `".sh"` (without quotation marks) in the current directory and all its sub-directories. It should display only the file names without the `.sh`. Example of output:
+```sh
+$>./find_sh.sh | cat -e
+find_sh$
+file1$
+file2$
+file3$
+$>
+```
+**Solution:** Creatie a file with the next command:
+```sh
+#!/bin/sh
+find . -type f -name '*.sh' -execdir basename {} .sh ';'
+```
+
+### Exercise 03:  count_files
+Write a command line that counts and displays the number of regular files and directories in the current directory and all its sub-directories. It should include `"."`, the starting directory. Example of output:
+```sh
+$>./count_files.sh | cat -e
+42$
+$>
+```
+**Solution:** 
+```sh
+find . -type f -o -type d | wc -l | sed 's: ::g'
+```
