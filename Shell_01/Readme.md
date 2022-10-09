@@ -53,3 +53,20 @@ $>
 ```sh
 find . -type f -o -type d | wc -l | sed 's: ::g'
 ```
+
+### Exercise 06:  Skip
+Write a command line that displays every other line for the command `ls -l`, starting from the first line.
+
+**Solution:**  `ls -l | awk '(NR%2==1)'`
+
+### Exercise 07:  r_dwssap
+Write a command line that displays the output of a `cat /etc/passwd command`, removing comments, every other line starting from the second line, reversing each login, sorted in reverse alphabetical order, and keeping only logins between `FT_LINE1` and `FT_LINE2` included, and they must separated by `", "` (without quotation marks), and the output must end with a `"."`. Example: Between lines 7 and 15, the result should be something like this:
+```sh
+$> ./r_dwssap.sh
+sstq_, sorebrek_brk_, soibten_, sergtsop_, scodved_, rlaxcm_, rgmecived_, revreswodniw_, revressta_
+.$>
+```
+**Solution:** 
+```sh
+cat /etc/passwd | grep -v "#" | sed -n 'n;p' | cut -f 1 -d : | rev | sort -r | sed -n "$FT_LINE1,$FT_LINE2 p" | tr '\n' ',' | sed 's:,:, :g' | sed 's:, $:.:' | tr -d '\n'
+```
