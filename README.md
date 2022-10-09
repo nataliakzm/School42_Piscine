@@ -73,3 +73,12 @@ Completed During The 2st Piscine (July - August 2022) at 42 Firenze Luiss.
 </div>
 
 - [Rush 00](https://github.com/nataliakzm/School42_Piscine/tree/main/Rush_00/ex00) -  Rectange (X and Y)
+
+<div align="center">
+
+# 42 Shell Project
+
+</div>
+
+- [Shell00](https://github.com/nataliakzm/School42_Piscine/tree/main/Shell_00) 
+- [Shell01](https://github.com/nataliakzm/School42_Piscine/tree/main/Shell_01) 
