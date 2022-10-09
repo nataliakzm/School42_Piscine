@@ -16,3 +16,15 @@ Completed During The 2st Piscine (July - August 2022) at 42 Firenze Luiss.
 - [ex04: ft_is_negative](https://github.com/nataliakzm/School42_Piscine/blob/main/C00/ex04/ft_is_negative.c) - Print the Numbers 9 to 0 in Reverse
 - [ex05: ft_print_comb](https://github.com/nataliakzm/School42_Piscine/blob/main/C00/ex05/ft_print_comb.c) - Combine Numbers into Different Triple Combinations
 - [ex06: ft_print_comb2](https://github.com/nataliakzm/School42_Piscine/blob/main/C00/ex06/ft_print_comb2.c) - Combine Numbers into Different Double Combinations
+
+## [C01](https://github.com/nataliakzm/School42_Piscine/tree/main/C01) - Pointers and If Statements
+
+- [ex00: ft_ft](https://github.com/nataliakzm/School42_Piscine/blob/main/C01/ex00/ft_ft.c) - Make a Pointer to 42
+- [ex01: ft_ultimate_ft](https://github.com/nataliakzm/School42_Piscine/blob/main/C01/ex01/ft_ultimate_ft.c) - Make a Pointer to a Pointer to a...to 42
+- [ex02: ft_swap](https://github.com/nataliakzm/School42_Piscine/blob/main/C01/ex02/ft_swap.c) - Swap Two Values, Using a Temporary Variable
+- [ex03: ft_div_mod]https://github.com/nataliakzm/School42_Piscine/blob/main/C01/ex03/ft_div_mod.c) - Use Div and Mod to Return a Value
+- [ex04: ft_ultimate_div_mod](https://github.com/nataliakzm/School42_Piscine/blob/main/C01/ex04/ft_ultimate_div_mod.c) - Store Values, Swap Them, use Div and Mod
+- [ex05: ft_putstr](https://github.com/nataliakzm/School42_Piscine/blob/main/C01/ex05/ft_putstr.c) - Write a String
+- [ex06: ft_strlen](https://github.com/nataliakzm/School42_Piscine/blob/main/C01/ex06/ft_strlen.c) - Get the Length of a String
+- [ex07: ft_rev_int_tab](https://github.com/nataliakzm/School42_Piscine/blob/main/C01/ex07/ft_rev_int_tab.c) - Reverse a Given Array
+- [ex08: ft_sort_int_tab](https://github.com/nataliakzm/School42_Piscine/blob/main/C01/ex08/ft_sort_int_tab.c) - Sort an Array
