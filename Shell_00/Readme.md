@@ -141,3 +141,39 @@ mywork.c~$
 #!/bin/sh
 git status --ignored -s | grep '!!' | cut -f 2 -d' '
 ```
+
+### Exercise 07: diff
+Create a file b, so that :
+```sh
+%>diff a b > sw.diff
+```
+**Solution:** 
+1) Extract the tar file
+```sh
+%>tar -xf ./'resources.tar.gz'
+```
+2) Patch takes a `sw.diff` file (with the description of all new changes, which it compares to the text in file a) and creates a file b: an old text with new changes
+```sh
+%> patch ./a -o ./b < ./sw.diff
+```
+3) Check the result
+```sh
+%>cat -e ./b 
+```
+
+### Exercise 08: clean
+In a file called clean place the command line that will search for all files - in the current directory as well as in its sub-directories - with a name ending by ~, or a name that start and end by #
+The command line will show and erase all files found.
+Only one command is allowed: no ’;’ or ’&&’ or other shenanigans.
+
+**Solution:** Write down this to your script
+```sh
+find . -type f \( -name "*~" -o -name "#*#" \) -print -delete
+```
+
+### Exercise 09:  Illusions, not tricks, Michael... 
+Create a magic file called ft_magic that will be formatted appropriately to detect
+files of 42 file type, built with a "42" string at the 42nd byte.
+
+**Solution:** Write down this to your script -  `sh 41 string 42 42 file`
+
