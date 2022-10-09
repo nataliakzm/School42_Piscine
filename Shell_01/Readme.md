@@ -70,3 +70,30 @@ sstq_, sorebrek_brk_, soibten_, sergtsop_, scodved_, rlaxcm_, rgmecived_, revres
 ```sh
 cat /etc/passwd | grep -v "#" | sed -n 'n;p' | cut -f 1 -d : | rev | sort -r | sed -n "$FT_LINE1,$FT_LINE2 p" | tr '\n' ',' | sed 's:,:, :g' | sed 's:, $:.:' | tr -d '\n'
 ```
+
+### Exercise 08:  add_chelou
+Write a command line that takes numbers from variables `FT_NBR1`, in `’\"?!` base,
+and `FT_NBR2`, in `mrdoc` base, and displays the sum of both in gtaio `luSnemf` base.
+
+- Example 1:
+```sh
+FT_NBR1=\'?"\"'\
+FT_NBR2=rcrdmddd
+```
+- The sum is:
+```sh
+Salut
+```
+- Example 2:
+```sh
+FT_NBR1=\"\"!\"\"!\"\"!\"\"!\"\"!\"\"
+FT_NBR2=dcrcmcmooododmrrrmorcmcrmomo
+```
+- The sum is:
+```sh
+Segmentation fault
+```
+**Solution:**
+```sh
+echo "obase=13;ibase=5;" $FT_NBR1 + $FT_NBR2 | tr "\'" '0' | tr '\\\"\?\!mrdoc' "123401234" | sed 's/3/o/' | bc | tr '0123456789ABC' 'gtaio\ luSnemf'
+```
